@@ -35,10 +35,12 @@ const TestimonialContent = (props) => {
     
     function supriseHandler(){
 
-        let pos = Math.floor(Math.random()*(0+userInfo.length))+0;
+        let pos = Math.floor(Math.random()*( 0 + userInfo.length)) + 0;
         setIndex(pos);
         setDataUser(userInfo[index]);
     }
+
+    // setInterval(rightShiftHandler,5000);
 
   return (
     <div className='flex flex-col justify-center items-center'>
